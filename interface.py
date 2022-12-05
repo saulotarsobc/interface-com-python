@@ -17,15 +17,10 @@ class Ui_MainWindow(object):
         MainWindow.resize(527, 198)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
-        self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(20, 20, 81, 16))
-        self.label.setObjectName("label")
-        self.teste = QtWidgets.QPushButton(self.centralwidget)
-        self.teste.setGeometry(QtCore.QRect(450, 150, 75, 23))
-        self.teste.setObjectName("teste")
-        self.plainTextEdit = QtWidgets.QPlainTextEdit(self.centralwidget)
-        self.plainTextEdit.setGeometry(QtCore.QRect(90, 20, 401, 21))
-        self.plainTextEdit.setObjectName("plainTextEdit")
+        self.progressBar = QtWidgets.QProgressBar(self.centralwidget)
+        self.progressBar.setGeometry(QtCore.QRect(400, 150, 118, 23))
+        self.progressBar.setProperty("value", 24)
+        self.progressBar.setObjectName("progressBar")
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
@@ -37,8 +32,6 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Aplicativo Como Interface - Python"))
-        self.label.setText(_translate("MainWindow", "ID da Planilha:"))
-        self.teste.setText(_translate("MainWindow", "Alerta Teste"))
 
 
 if __name__ == "__main__":

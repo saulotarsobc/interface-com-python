@@ -1,3 +1,4 @@
+#! py
 import sys
 from time import sleep
 import interface as home
@@ -10,13 +11,11 @@ ui.setupUi(MainWindow)
 
 
 def teste():
-    alert = QMessageBox()
-    alert.setText('Funciona!')
-    alert.exec()
+    print('teste')
 
 if __name__ == "__main__":    
     """ init """
     MainWindow.show()
     sys.exit(app.exec_())
-    sleep(3)
     teste()
+    sleep(3)

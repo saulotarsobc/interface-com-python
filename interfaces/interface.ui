@@ -15,40 +15,17 @@
    <string>Aplicativo Como Interface - Python</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
+   <widget class="QProgressBar" name="progressBar">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>20</y>
-      <width>81</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>ID da Planilha:</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="teste">
-    <property name="geometry">
-     <rect>
-      <x>450</x>
+      <x>400</x>
       <y>150</y>
-      <width>75</width>
+      <width>118</width>
       <height>23</height>
      </rect>
     </property>
-    <property name="text">
-     <string>Alerta Teste</string>
-    </property>
-   </widget>
-   <widget class="QPlainTextEdit" name="plainTextEdit">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>20</y>
-      <width>401</width>
-      <height>21</height>
-     </rect>
+    <property name="value">
+     <number>24</number>
     </property>
    </widget>
   </widget>
